@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Meetings - Streama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Meetings</h1>
+        <div id="videoCall">
+            <video id="localVideo" autoplay></video>
+            <video id="remoteVideo" autoplay></video>
+            <button id="startCall" class="button">Start Call</button>
+            <button id="endCall" class="button">End Call</button>
+        </div>
+        <a href="create-meeting.html" class="button">Create Another Meeting</a>
+        <a href="index.html" class="button">Logout</a>
+    </div>
+    
+    <script>
+        const startCallBtn = document.getElementById('startCall');
+        const endCallBtn = document.getElementById('endCall');
+        let localStream;
+
+        startCallBtn.addEventListener('click', async () => {
+            localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+            document.getElementById('localVideo').srcObject = localStream;
+            // Code for setting up peer connection and signaling goes here
+        });
+
+        endCallBtn.addEventListener('click', () => {
+            localStream.getTracks().forEach(track => track.stop());
+            // Code for closing peer connection goes here
+        });
+    </script>
+</body>
+</html>

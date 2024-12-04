@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Streama</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Login to Streama</h1>
+        
+        <form id="loginForm">
+            <input type="text" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" class="button">Login</button>
+        </form>
+        
+        <div class="g-signin2" data-onsuccess="onSignIn" style="margin: 20px 0;"></div>
+        <button id="logoutBtn" style="display:none;" onclick="logout()">Logout</button>
+
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+        <a href="index.html" class="button">Back to Home</a>
+    </div>
+    
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            const response = await fetch('http://localhost:4000/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, password }),
+            });
+
+            if (response.ok) {
+                alert('Login successful!');
+                window.location.href = 'create-meeting.html'; // Redirect to create meeting page
+            } else {
+                const errorText = await response.text();
+                alert(`Login failed: ${errorText}`);
+            }
+        });
+
+        function onSignIn(googleUser) {
+            const token = googleUser.getAuthResponse().id_token; // Get the Google ID token
+            
+            // Store token for API usage
+            localStorage.setItem('token', token);
+            alert('Google login successful!');
+            window.location.href = 'create-meeting.html'; // Redirect to create meeting page
+        }
+
+        function logout() {
+            const auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(() => {
+                localStorage.removeItem('token'); // Remove token on logout
+                alert('You have been logged out.');
+            });
+        }
+    </script>
+</body>
+</html>
