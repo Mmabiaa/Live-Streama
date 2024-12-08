@@ -16,6 +16,9 @@ Welcome to the Basic Streaming Platform! This project is a simple web applicatio
 - HTML5
 - CSS3
 - JavaScript
+
+## Live Demo
+-- for live demo [visit]()
  
 
 ## Installation
