@@ -1,8 +1,8 @@
-# Live-Strema
+# Live-Strema 📹
 
 Welcome to the Basic Streaming Platform! This project is a simple web application built using HTML, JavaScript, and CSS that allows users to stream content, manage their accounts, and interact with the platform.
 
-## Features
+## Features🪽
 
 - **User Registration**: New users can create an account.
 - **User Login**: Existing users can log in to access their accounts.
@@ -11,7 +11,7 @@ Welcome to the Basic Streaming Platform! This project is a simple web applicatio
 - **About Page**: Learn more about the platform and its features.
 - **Responsive Design**: The platform is designed to work on various devices.
 
-## Technologies Used
+## Technologies Used💿
 
 - HTML5
 - CSS3
