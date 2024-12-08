@@ -18,7 +18,7 @@ Welcome to the Basic Streaming Platform! This project is a simple web applicatio
 - JavaScript
 
 ## Live Demo
--- for live demo [visit]()
+- **for live demo [visit](https://live-streama.vercel.app)**
  
 
 ## Installation
