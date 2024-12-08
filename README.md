@@ -16,7 +16,7 @@ Welcome to the Basic Streaming Platform! This project is a simple web applicatio
 - HTML5
 - CSS3
 - JavaScript
-- (Optional) Any libraries or frameworks you used (e.g., Bootstrap, jQuery)
+ 
 
 ## Installation
 
