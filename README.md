@@ -19,26 +19,34 @@ Welcome to the Basic Streaming Platform! This project is a simple web applicatio
 - **Responsive Design**: The platform is designed to work on various devices.
 
 ## Screenshot
--- This is a shots of the various page of this program.
+- This is a shots of the various page of this program.
+---
 **Home Page**
+---
 ![home](https://github.com/Mmabiaa/Live-Streama/blob/main/screenshots/home.jpg)
 
 **Login Page**
+---
 ![login](https://github.com/Mmabiaa/Live-Streama/blob/main/screenshots/login.jpg)
 
 **Register Page**
+---
 ![register](https://github.com/Mmabiaa/Live-Streama/blob/main/screenshots/register.jpg)
 
 **Meeting Page**
+---
 ![meeting](https://github.com/Mmabiaa/Live-Streama/blob/main/screenshots/meeting.jpg)
 
 **Live Page**
+---
 ![live](https://github.com/Mmabiaa/Live-Streama/blob/main/screenshots/live.jpg)
 
 **Contact Page**
+---
 ![contact](https://github.com/Mmabiaa/Live-Streama/blob/main/screenshots/register.jpg)
 
 **About Page**
+---
 ![about](https://github.com/Mmabiaa/Live-Streama/blob/main/screenshots/about.jpg)
 
 ## Technologies Used💿
