@@ -2,12 +2,16 @@
 
 Welcome to the Basic Streaming Platform! This project is a simple web application built using HTML, JavaScript, and CSS that allows users to stream content, manage their accounts, and interact with the platform.
 
-## Table Content
+## Table of Contents
+
 - [Features](#features)
 - [Screenshot](#screenshot)
 - [Technologies](#technologies)
 - [Demo](#demo)
 - [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
+
 
 ## Features🪽
 
