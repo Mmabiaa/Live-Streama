@@ -5,8 +5,8 @@ Welcome to the Basic Streaming Platform! This project is a simple web applicatio
 ## Table Content
 - [Features](#features)
 - [Screenshot](#screenshot)
-- [Technologies Used](#technology)
-- [Live Demo](#demo)
+- [Technologies-Used](#technology-used)
+- [Demo](#demo)
 - [Installation](#installation)
 
 ## Features🪽
