@@ -49,7 +49,7 @@ Welcome to the Basic Streaming Platform! This project is a simple web applicatio
 ---
 ![about](https://github.com/Mmabiaa/Live-Streama/blob/main/screenshots/about.jpg)
 
-## Technologies Used💿
+## Technologies-Used💿
 
 - **HTML5:**
    This was used for the structure of the web pages and the front end
@@ -60,7 +60,7 @@ Welcome to the Basic Streaming Platform! This project is a simple web applicatio
 - **JavaScript:**
    This was used to enhance the logic and functionalities for the various web pages and the backend
 
-## Live Demo
+## Demo
 - **for live demo [visit](https://live-streama.vercel.app)**
  
 
