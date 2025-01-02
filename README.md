@@ -5,7 +5,7 @@ Welcome to the Basic Streaming Platform! This project is a simple web applicatio
 ## Table Content
 - [Features](#features)
 - [Screenshot](#screenshot)
-- [Technologies-Used](#technology-used)
+- [Technologies](#technology)
 - [Demo](#demo)
 - [Installation](#installation)
 
@@ -49,7 +49,7 @@ Welcome to the Basic Streaming Platform! This project is a simple web applicatio
 ---
 ![about](https://github.com/Mmabiaa/Live-Streama/blob/main/screenshots/about.jpg)
 
-## Technologies-Used💿
+## Technologies💿
 
 - **HTML5:**
    This was used for the structure of the web pages and the front end
