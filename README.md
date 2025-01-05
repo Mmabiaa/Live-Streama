@@ -92,6 +92,7 @@ We welcome contributions from the community! If you'd like to contribute to the 
 5. Push your branch (`git push origin feature-name`).
 6. Create a pull request.
 
+[Contribution](CONTRIBUTION.md)
 Make sure to follow the coding standards and write clean, maintainable code.
 
 ## License 📜
