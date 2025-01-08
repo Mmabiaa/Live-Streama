@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP - Streama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verify Your OTP</h1>
+        <form id="otpForm">
+            <input type="email" id="otpEmail" placeholder="Email" required>
+            <input type="text" id="otp" placeholder="Enter OTP" required>
+            <button type="submit" class="button">Verify OTP</button>
+        </form>
+        <p>Didn’t receive an OTP? <a href="register.html">Resend</a></p>
+        <a href="../index.html" class="button">Back to Home</a>
+    </div>
+    <script>
+        const otpForm = document.getElementById('otpForm');
+        otpForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('otpEmail').value;
+            const otp = document.getElementById('otp').value;
+
+            const response = await fetch('http://localhost:4000/verify-otp', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, otp }),
+            });
+
+            if (response.ok) {
+                alert('OTP verified successfully! You can now log in.');
+                window.location.href = 'login.html'; // Redirect to login
+            } else {
+                const errorText = await response.text();
+                alert(`OTP verification failed: ${errorText}`);
+            }
+        });
+    </script>
+</body>
+</html>
